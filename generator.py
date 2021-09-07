@@ -9,6 +9,7 @@ combine salt and website to generator hash, choose a few numbers as the initial 
 combine password in mind and initial password to finial password (output)
 use txt to input second?
 use txt to save output?
+test home commit GPG
 '''
 site_name='google'
 s = hashlib.sha256(site_name.encode('utf-8')).hexdigest()
