@@ -1,6 +1,7 @@
 import os
 import sys
 import hashlib
+import argparse
 
 '''
 keep one short password in mind (ex. "Nj/ ")
@@ -18,6 +19,11 @@ option is by manual input
 # s = hashlib.sha256(site_name.encode('utf-8')).hexdigest()
 # print(s)
 
+def read_from_file(file_name,folder_name):
+    file_path = os.path.join(os.getcwd(),folder_name,file_name)
+    file_open = open(file_path,'r',encoding='utf-8')
+    return file_open.readlines()
+
 if __name__ == "__main__":
     # salt = '123'  # sys.argv[1]
     # website = '456'  # sys.argv[2]
@@ -26,14 +32,20 @@ if __name__ == "__main__":
 
     pw_source_folder = 'pw-source'
     website_pw_list = []
-    salt_path = os.path.join(os.getcwd(), pw_source_folder, 'salt.txt')
-    website_path = os.path.join(os.getcwd(), pw_source_folder, 'web-site.txt')
-    f_salt = open(salt_path, 'r', encoding='utf-8')
-    salt_each_lines = f_salt.readlines()
-    f_salt.close()
-    f_website = open(website_path, 'r', encoding='utf-8')
-    website_each_lines = f_website.readlines()
-    f_website.close()
+
+    # salt_path = os.path.join(os.getcwd(), pw_source_folder, 'salt.txt')
+    # website_path = os.path.join(os.getcwd(), pw_source_folder, 'web-site.txt')
+
+    salt_each_lines = read_from_file('salt.txt',pw_source_folder)
+    # f_salt = open(salt_path, 'r', encoding='utf-8')
+    # salt_each_lines = f_salt.readlines()
+    # f_salt.close()
+
+    website_each_lines = read_from_file('web-site.txt',pw_source_folder)
+    # f_website = open(website_path, 'r', encoding='utf-8')
+    # website_each_lines = f_website.readlines()
+    # f_website.close()
+
     f_output = open(os.path.join(os.getcwd(), pw_source_folder, 'output.txt'), 'w')
     for website_line in website_each_lines:
         website = website_line.split(":")[0].strip()
