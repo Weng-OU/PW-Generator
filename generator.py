@@ -34,6 +34,7 @@ if __name__ == "__main__":
     f_website = open(website_path, 'r', encoding='utf-8')
     website_each_lines = f_website.readlines()
     f_website.close()
+    f_output = open(os.path.join(os.getcwd(), pw_source_folder, 'output.txt'), 'w')
     for website_line in website_each_lines:
         website = website_line.split(":")[0].strip()
         url = website_line.split(':')[1].strip()
@@ -44,3 +45,10 @@ if __name__ == "__main__":
         init_hash_pw = hash_pw[:4] + hash_pw[60:]
         # print('{} : {}'.format(website, hash_pw))
         # print(init_hash_pw)
+        website_pw_list.append(website)
+        website_pw_list.append(init_hash_pw)
+        # print(website_pw_list)
+    for i in range(0, len(website_pw_list), 2):
+        print('{} : {}'.format(website_pw_list[i], website_pw_list[i + 1]), file=f_output)
+        # print(website_pw_list[i])
+    f_output.close()
