@@ -1,0 +1,3 @@
+google  :accounts.google
+facebook:facebook
+mobile01:mobile01
