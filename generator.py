@@ -1,6 +1,7 @@
 import os
 import sys
 import hashlib
+import argparse
 
 '''
 keep one short password in mind (ex. "Nj/ ")
