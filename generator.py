@@ -15,14 +15,24 @@ default is read from file
 if no file, output error message
 option is by manual input
 '''
+
+
 # site_name='google'
 # s = hashlib.sha256(site_name.encode('utf-8')).hexdigest()
 # print(s)
 
-def read_from_file(file_name,folder_name):
-    file_path = os.path.join(os.getcwd(),folder_name,file_name)
-    file_open = open(file_path,'r',encoding='utf-8')
+def read_from_file(file_name, folder_name):
+    file_path = os.path.join(os.getcwd(), folder_name, file_name)
+    file_open = open(file_path, 'r', encoding='utf-8')
     return file_open.readlines()
+
+
+def parser_salt_website_argument():
+    parser = argparse.ArgumentParser(description='need write here')
+    parser.add_argument('-salt', '-s', type=str, help='Add salt to mess up the encryption result.', default='')
+    parser.add_argument('-url', '-u', type=str, help='Treat the destination URL as an encrypted seed.', default='')
+    return parser
+
 
 if __name__ == "__main__":
     # salt = '123'  # sys.argv[1]
@@ -32,19 +42,29 @@ if __name__ == "__main__":
 
     pw_source_folder = 'pw-source'
     website_pw_list = []
+    salt_each_lines = []
+    website_each_lines = []
+
+    parser = parser_salt_website_argument()
+    args = parser.parse_args()
+    if args.salt == '':
+        salt_each_lines = read_from_file('salt.txt', pw_source_folder)
+        # f_salt = open(salt_path, 'r', encoding='utf-8')
+        # salt_each_lines = f_salt.readlines()
+        # f_salt.close()
+    else:
+        salt_each_lines.append('1:{}'.format(args.salt))
+
+    if args.url == '':
+        website_each_lines = read_from_file('web-site.txt', pw_source_folder)
+        # f_website = open(website_path, 'r', encoding='utf-8')
+        # website_each_lines = f_website.readlines()
+        # f_website.close()
+    else:
+        website_each_lines.append('{}:{}'.format(args.url, args.url))
 
     # salt_path = os.path.join(os.getcwd(), pw_source_folder, 'salt.txt')
     # website_path = os.path.join(os.getcwd(), pw_source_folder, 'web-site.txt')
-
-    salt_each_lines = read_from_file('salt.txt',pw_source_folder)
-    # f_salt = open(salt_path, 'r', encoding='utf-8')
-    # salt_each_lines = f_salt.readlines()
-    # f_salt.close()
-
-    website_each_lines = read_from_file('web-site.txt',pw_source_folder)
-    # f_website = open(website_path, 'r', encoding='utf-8')
-    # website_each_lines = f_website.readlines()
-    # f_website.close()
 
     f_output = open(os.path.join(os.getcwd(), pw_source_folder, 'output.txt'), 'w')
     for website_line in website_each_lines:
