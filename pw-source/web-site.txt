@@ -49,3 +49,4 @@ ubisoft         :connect.ubisoft.com
 webike          :webike.tw
 xiaomi          :account.xiaomi.com
 xvideos         :xvideos.com
+ETC             :fetc.net.tw
