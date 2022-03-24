@@ -53,3 +53,5 @@ einvoice        :einvoice.nat.gov.tw
 ETC             :fetc.net.tw
 fundrich        :fundrich.com.tw
 gugugoo         :buy.gugugoo.com
+disney+         :disneyplus.com
+888             :888.coa.gov.tw
