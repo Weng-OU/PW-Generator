@@ -55,3 +55,5 @@ fundrich        :fundrich.com.tw,1
 gugugoo         :buy.gugugoo.com,1
 disney+         :disneyplus.com,1
 888             :888.coa.gov.tw,1
+MAX             :max.maicoin.com,1
+BINANCE         :binance.com,1
