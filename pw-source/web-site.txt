@@ -57,3 +57,5 @@ disney+         :disneyplus.com,1
 888             :888.coa.gov.tw,1
 MAX             :max.maicoin.com,1
 BINANCE         :binance.com,1
+Hiveon          :hiveon.com,1
+FTX pro         :ftx.com,1
