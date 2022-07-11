@@ -59,3 +59,4 @@ MAX             :max.maicoin.com,1
 BINANCE         :binance.com,1
 Hiveon          :hiveon.com,1
 FTX pro         :ftx.com,1
+Dyson           :shop.dyson.tw,1
