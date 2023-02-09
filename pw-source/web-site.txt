@@ -60,3 +60,5 @@ BINANCE         :binance.com,1
 Hiveon          :hiveon.com,1
 FTX pro         :ftx.com,1
 Dyson           :shop.dyson.tw,1
+pass2u          :www.pass2u.net,1
+hehuanline      :hehuanline.forest.gov.tw,1
