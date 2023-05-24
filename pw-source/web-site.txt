@@ -60,3 +60,14 @@ BINANCE         :binance.com,1
 Hiveon          :hiveon.com,1
 FTX pro         :ftx.com,1
 Dyson           :shop.dyson.tw,1
+hengstyle       :hengstyle.com,1
+GPW(PT)         :greatposterwall.com,1
+M-team          :kp.m-team.cc,1
+ExoticaZ        :exoticaz.to,1
+ubot_user       :mybank.ubot.com.tw,1
+ubot            :mybank.ubot.com,1
+accton_wiki     :buwiki.bouzzing.com,1
+accton_cloud    :cloud.buwiki.bouzzing.com,1
+accton_redmine  :redmine.buwiki.bouzzing.com,1
+confluence      :kb.annapurnalabswiki.com,1
+xwiki           :cards-prod.annapurnalabswiki.com,1
