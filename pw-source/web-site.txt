@@ -60,6 +60,7 @@ BINANCE         :binance.com,1
 Hiveon          :hiveon.com,1
 FTX pro         :ftx.com,1
 Dyson           :shop.dyson.tw,1
+<<<<<<< HEAD
 hengstyle       :hengstyle.com,1
 GPW(PT)         :greatposterwall.com,1
 M-team          :kp.m-team.cc,1
@@ -71,3 +72,7 @@ accton_cloud    :cloud.buwiki.bouzzing.com,1
 accton_redmine  :redmine.buwiki.bouzzing.com,1
 confluence      :kb.annapurnalabswiki.com,1
 xwiki           :cards-prod.annapurnalabswiki.com,1
+=======
+pass2u          :www.pass2u.net,1
+hehuanline      :hehuanline.forest.gov.tw,1
+>>>>>>> 16802b979395c142c3676a91ee54f4b2d1a80b46
