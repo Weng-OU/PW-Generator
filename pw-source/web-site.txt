@@ -73,3 +73,10 @@ accton_cloud    :cloud.buwiki.bouzzing.com,1
 accton_redmine  :redmine.buwiki.bouzzing.com,1
 confluence      :kb.annapurnalabswiki.com,1
 xwiki           :cards-prod.annapurnalabswiki.com,1
+台企(交易密碼)  :ebank.tbb.com.tw,1
+台企(簽入密碼)  :ebank.tbb.com.tw,2
+megabank(兆豐)  :ebank.megabank.com.tw,1
+visit japan web :vjw.digital.go.jp,1
+ewelink         :web.ewelink.cc,1
+bibian          :bibian.co.jp,1
+hassbian        :bbs.hassbian.com,1
