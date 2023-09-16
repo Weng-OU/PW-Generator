@@ -80,3 +80,5 @@ visit japan web :vjw.digital.go.jp,1
 ewelink         :web.ewelink.cc,1
 bibian          :bibian.co.jp,1
 hassbian        :bbs.hassbian.com,1
+jxhuoyun(急翔)  :www.jxhuoyun.com,1
+嘉立創          :jlc.com,1
