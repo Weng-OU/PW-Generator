@@ -82,5 +82,5 @@ bibian          :bibian.co.jp,1
 hassbian        :bbs.hassbian.com,1
 jxhuoyun(急翔)  :www.jxhuoyun.com,1
 嘉立創          :jlc.com,1
-taopve          :taopve.bouzzing.com
-taopf           :taopf.bouzzing.com
+taopve          :taopve.bouzzing.com,1
+taopf           :taopf.bouzzing.com,1
