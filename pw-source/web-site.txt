@@ -84,3 +84,10 @@ jxhuoyun(急翔)  :www.jxhuoyun.com,1
 嘉立創          :jlc.com,1
 taopve          :taopve.bouzzing.com,1
 taopf           :taopf.bouzzing.com,1
+新光產險        :www.sk858.com.tw,1
+Broadlink       :Broadlink,1
+南+             :www.south-plus.net,1
+氣象署          :pweb.cwa.gov.tw,1
+tp-link         :tp-link,1
+AJcloud         :Ajcloud,1
+Garmin          :sso.garmin.com,1
